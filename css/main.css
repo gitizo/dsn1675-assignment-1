@@ -21,12 +21,13 @@ h1{
 	text-align: center;
 	color: purple;
 	margin:0,1em,0,1em;
+	overflow: hidden;
 }
 
 h2{
 	font-family: 'Montserrat', sans-serif;
 	font-size: 1.5em;
-	margin:1em;
+	margin-top:1em;
 	text-align: center;
 	color:purple;
 }
@@ -34,8 +35,17 @@ h2{
 h3{
 	font-family: 'Montserrat', sans-serif;
 	font-size: 20px;
-	margin:1em;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding:0;
 }
+
+#titles{
+	padding:1rem;
+}
+
+
+
 
 nav{
 	
@@ -51,11 +61,13 @@ a:hover{
 
 li{
 	display: inline-block;
+	width:100%;
 }
 
 nav a{
 	text-decoration: none;
 	width:25%;
+
 }
 
 .top{
@@ -65,6 +77,13 @@ nav a{
 	overflow: hidden;
 	background-color: beige;
 	margin:0;
+	display:inline-block;
+}
+
+.top li{
+	float:left;
+	display: inline-block;
+	width:25%;
 }
 
 .top-image h2{
@@ -84,14 +103,23 @@ nav a{
 }
 
 header img{
-	width:15%;
+	width:4.5rem;
 	float:left;
 	padding:1rem;
+}
+
+header a{
+	width:25%
+	float:right;
+	text-decoration: none;
+	
+
 }
 
 .banner {
   width: 100%;
   margin:0;
+  clear:left;
 }
 
 figcaption{
@@ -104,13 +132,27 @@ figcaption{
 
 }
 
-dl{
-	margin:1em;
+.learn a{
+	padding:1rem;
+	color:blue;
+	text-align: center;
+
 }
 
-dl dt{
-	display: inline-block;
+dt{
+	margin:0;
 	float: left;
+	font-size: 1rem;
+	padding-left:1rem;
+	padding-right: 1rem;
+	clear: bottom;
+
+}
+
+dd{
+	margin: 0;
+	float: left;
+	clear:right;
 
 }
 
@@ -142,6 +184,14 @@ dl dt{
 	width:100%;
 }
 
+strong p{
+	text-align: center; 
+}
+
+p{
+	text-align: center;
+}
+
 #buy-tickets h2{
 	color: purple;
 }
@@ -157,3 +207,24 @@ dl dt{
 	text-decoration: none;
 }
 
+#times{
+	text-align: center;
+}
+
+ul{
+	padding:0;
+
+}
+
+li{
+	padding:0.5rem;
+}
+
+ol{
+	padding:1rem;
+}
+
+#this-week{
+	margin-top:1rem;
+	margin-bottom: 0;
+}
