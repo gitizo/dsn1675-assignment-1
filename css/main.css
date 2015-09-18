@@ -20,6 +20,7 @@ h1{
 	font-family: 'Montserrat', sans-serif;
 	text-align: center;
 	color: purple;
+	margin:0,1em,0,1em;
 }
 
 h2{
@@ -37,43 +38,29 @@ h3{
 }
 
 nav{
-	text-align: center;
+	
 	margin:0;
 	padding:0;
-	clear:right;
-	overflow: hidden;
 	color: blue;
 	
 }
 
 a:hover{
-	background-color: #989edc;
+	color: #989edc;
 }
 
-nav li{
-	display:inline;
-	float:left;
-	margin: 0;
-	color: blue;
-	width:25%;
-
+li{
+	display: inline-block;
 }
 
 nav a{
-	display: inline-block;
-	padding:0.5em 0.5em;
-	text-align: center;
-	margin: 0;
-	font-size: 100%;
 	text-decoration: none;
-	float: left;
-	color:purple;
-
+	width:25%;
 }
 
-nav ol{
+.top{
 	padding: 5px;
-	display: inline-block;
+	text-decoration: none;
 	width:100%;
 	overflow: hidden;
 	background-color: beige;
@@ -93,6 +80,13 @@ nav ol{
 
 .top-image{
 	position:relative;
+	z-index: 1;
+}
+
+header img{
+	width:15%;
+	float:left;
+	padding:1rem;
 }
 
 .banner {
@@ -101,6 +95,7 @@ nav ol{
 }
 
 figcaption{
+	z-index: 2;
 	text-align: center;
 	position: absolute;
 	top: 7em;
@@ -146,3 +141,19 @@ dl dt{
 .lighthouse{
 	width:100%;
 }
+
+#buy-tickets h2{
+	color: purple;
+}
+
+#buy-tickets p{
+	text-align:center;
+}
+
+#buy-tickets a{
+	text-align: center;
+	width:45%;
+	display: inline-block;
+	text-decoration: none;
+}
+
